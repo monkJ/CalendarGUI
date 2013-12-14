@@ -76,7 +76,7 @@ public class TileEntityCalendarRenderer extends TileEntitySpecialRenderer
         GL11.glTranslatef(0.0F, -0.3125F, -0.4985F);
 
         /**Texture of the tile entity**/
-        Minecraft.getMinecraft().func_110434_K().func_110577_a(calendarTexture);
+        Minecraft.getMinecraft().renderEngine.bindTexture(calendarTexture);
         /* create new matrix */
         GL11.glPushMatrix();
         GL11.glScalef(factor, -factor, -factor);
